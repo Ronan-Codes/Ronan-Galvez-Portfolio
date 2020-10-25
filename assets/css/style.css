@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: rgb(93, 93, 117);
+    font-family: Helvetica, Arial, Sans-serif;
+}
+
+.hero {
+    background-image: url(../images/odaiba-beach.jpg);
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+    position: relative;
+    height:
+}
