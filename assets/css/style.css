@@ -5,8 +5,71 @@
 }
 
 body {
-    color: rgb(93, 93, 117);
+    color: rgb(45, 45, 56);
     font-family: Helvetica, Arial, Sans-serif;
+}
+
+header {
+    padding: 20px;
+    background-color: rgb(45, 45, 56);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* sticky?
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0
+    */
+}
+
+header div {
+    background-color: rgb(143, 189, 207);
+    width: 30%;
+    right: 20px;
+    position: relative;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0;
+    color: rgb(45, 45, 56);
+    text-align: right;
+    padding-right: 15px;
+    position: relative;
+    right: 10px;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(45, 45, 56);
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding-right: 22px;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.45vw;
+    color: rgb(143, 189, 207);
+    border-bottom: solid 3px rgb(143, 189, 207);
+    margin: 4px;
+}
+
+header nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
 }
 
 .hero {
