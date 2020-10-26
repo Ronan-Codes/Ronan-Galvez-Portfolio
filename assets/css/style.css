@@ -9,7 +9,8 @@ body {
     font-family: Helvetica, Arial, Sans-serif;
 }
 
-body, html {
+body,
+html {
     height: 100%;
 }
 
@@ -117,24 +118,83 @@ section {
 
 .section-flexbox {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+
 }
 
 .section-title {
-    flex: 0 15%;
+    flex: 1 5%;
     border-right: 4px solid rgb(45, 45, 56);
-    text-align: right;
-    padding: 2px 18px;
-    font-size: 32px;
-    color: rgb(91, 91, 124);
+    width: 50px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
+.section-title h1 {
+    padding: 2px 18px;
+    color: rgb(91, 91, 124);
+    font-size: 32px;
+    text-align: right;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-content {
+    flex: 1 70%;
+    width: 90%;
+
+}
 
 .paragraph {
-    flex: 1 70%;
     text-align: left;
     padding: 2px 25px;
     font-size: 16px;
     color: rgb(91, 91, 124);
+    flex-wrap: wrap;
 }
+
+/* get back to work section here */
+
+.grid-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    background: rgb(224, 224, 240);
+    width: 95%;
+    border: 2px solid black;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+
+/* contact me style start */
+
+.section-content ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+
+
+}
+
+.section-content ul li {
+    display: flex;
+    font-size: 19px;
+    font-weight: bolder;
+    padding: 15px 20px;
+    color: rgb(91, 91, 124);
+    line-height: 1.5;
+}
+
+.section-content a {
+    text-decoration: none;
+    color: rgb(91, 91, 124);
+}
+
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px)
