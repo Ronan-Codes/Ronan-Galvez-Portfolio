@@ -67,7 +67,7 @@ header nav ul {
 header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.45vw;
+    font-size: 20px;
     color: rgb(143, 189, 207);
     border-bottom: solid 3px rgb(143, 189, 207);
     margin: 4px;
@@ -102,7 +102,7 @@ header nav ul li a:hover {
 }
 
 .hero h2 {
-    font-size: 1.35vw;
+    font-size: 23px;
 }
 
 /* section style start */
@@ -113,4 +113,28 @@ section {
 
 .section-container {
     background-color: rgb(224, 224, 240);
+}
+
+.section-flexbox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.section-title {
+    flex: 0 15%;
+    border-right: 4px solid rgb(45, 45, 56);
+    text-align: right;
+    padding: 2px 18px;
+    font-size: 32px;
+    color: rgb(91, 91, 124);
+}
+
+
+.paragraph {
+    flex: 1 70%;
+    text-align: left;
+    padding: 2px 25px;
+    font-size: 16px;
+    color: rgb(91, 91, 124);
 }
