@@ -9,6 +9,12 @@ body {
     font-family: Helvetica, Arial, Sans-serif;
 }
 
+body, html {
+    height: 100%;
+}
+
+/* header style start */
+
 header {
     padding: 20px;
     background-color: rgb(45, 45, 56);
@@ -72,15 +78,39 @@ header nav ul li a:hover {
     border-radius: 15px;
 }
 
+/* hero style start */
+
 .hero {
     background-image: url(../images/odaiba-beach.jpg);
-    background-size: contain;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    background-attachment: fixed;
-    background-position: 80%;
+    height: 35%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
-    height:
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.hero div {
+    background-color: rgb(143, 189, 207);
+    height: fit-content;
+    padding: 10px;
+    position: relative;
+    right: 25px;
+    opacity: 0.80;
+}
+
+.hero h2 {
+    font-size: 1.35vw;
+}
+
+/* section style start */
+
+section {
+    padding: 25px;
+}
+
+.section-container {
+    background-color: rgb(224, 224, 240);
 }
