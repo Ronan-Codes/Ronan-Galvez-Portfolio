@@ -228,7 +228,3 @@ section {
     text-decoration: none;
     color: rgb(91, 91, 124);
 }
-
-
-/* MEDIA QUERY FOR TABLETS AND SMALLER */
-@media screen and (max-width: 768px)
