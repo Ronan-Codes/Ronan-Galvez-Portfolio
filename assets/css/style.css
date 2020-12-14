@@ -145,6 +145,15 @@ section {
 
 }
 
+.portrait {
+    width: 200px;
+    margin: auto;
+}
+
+.portrait-img {
+    width: 100%;
+}
+
 .paragraph {
     text-align: left;
     padding: 2px 25px;
@@ -168,8 +177,33 @@ section {
     border: 2px solid black;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
+
 }
 
+.projects {
+    border: 5px solid rgb(143, 189, 207);
+    margin: 0 10px 10px 0;
+
+
+}
+
+.project1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border: 5px solid rgb(143, 189, 207);
+}
+
+.project1 img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.run-buddy {
+    display: absolute;
+}
 
 /* contact me style start */
 
