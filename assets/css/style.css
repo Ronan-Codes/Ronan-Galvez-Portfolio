@@ -22,11 +22,18 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    /* sticky?
+
+    /* Sticky
     position: -webkit-sticky;
     position: sticky;
-    top: 0
-    */
+    top: 0;
+    z-index: 9999; */
+
+    /* TO Go Back to Norma, delete below and add sticky */
+    /* background-image: url("../images/odaiba-beach.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; */
 }
 
 header div {
@@ -34,17 +41,18 @@ header div {
     width: 30%;
     right: 20px;
     position: relative;
+    display: flex;
+    justify-content: flex-end;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 header h1 {
     font-weight: bold;
     font-size: 36px;
-    margin: 0;
     color: rgb(45, 45, 56);
-    text-align: right;
-    padding-right: 15px;
     position: relative;
-    right: 10px;
+    right: 15px;
 }
 
 header a {
@@ -66,12 +74,12 @@ header nav ul {
 }
 
 header nav ul li a {
-    padding: 10px 15px;
+    padding: 10px 10px 10px 22px;
     font-weight: lighter;
     font-size: 20px;
     color: rgb(143, 189, 207);
     border-bottom: solid 3px rgb(143, 189, 207);
-    margin: 4px;
+    margin: 4px 2px 4px 15px;
 }
 
 header nav ul li a:hover {
@@ -83,14 +91,18 @@ header nav ul li a:hover {
 
 .hero {
     background-image: url(../images/odaiba-beach.jpg);
-    height: 35%;
-    background-position: center;
     background-repeat: no-repeat;
+    height: 35%;
+    background-position: 0 60%;
     background-size: cover;
     position: relative;
+
+    /* Positions Subtitle */
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+
+
 }
 
 .hero div {
@@ -100,6 +112,7 @@ header nav ul li a:hover {
     position: relative;
     right: 25px;
     opacity: 0.80;
+    border-radius: 5px;
 }
 
 .hero h2 {
@@ -118,7 +131,7 @@ section {
 
 .section-flexbox {
     display: flex;
-
+    justify-content: center;
 }
 
 .section-title {
@@ -135,18 +148,18 @@ section {
     color: rgb(91, 91, 124);
     font-size: 32px;
     text-align: right;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .section-content {
     flex: 1 70%;
-    width: 90%;
+}
 
+.about-me-contents {
+    width: 80%;
 }
 
 .portrait {
-    width: 200px;
+    width: 250px;
     margin: auto;
 }
 
@@ -156,75 +169,111 @@ section {
 
 .paragraph {
     text-align: left;
-    padding: 2px 25px;
+    padding: 3px 0 3px 25px;
     font-size: 16px;
     color: rgb(91, 91, 124);
-    flex-wrap: wrap;
+    text-align: 1.4;
 }
 
-/* get back to work section here */
+/* Work Section Style Start */
 
-.grid-wrapper {
+.flex-wrapper {
     display: flex;
-    width: 100%;
-    justify-content: center;
-}
-
-.grid-container {
-    display: grid;
-    background: rgb(224, 224, 240);
-    width: 95%;
-    border: 2px solid black;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    height: 800px;
+    margin-left: 25px;
 }
 
 .projects {
-    border: 5px solid rgb(143, 189, 207);
-    margin: 0 10px 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 15px 15px 0;
+    filter: brightness(90%) sepia(0%);
+}
 
+.projects:hover {
+    filter: brightness(110%) sepia(15%);
+    transition: .5s;
+}
 
+.project-title {
+    font-size: 22px;
+    margin: 0 0 5% 0;
+    line-height: 1.5;
+    background-color: rgb(143, 189, 207);
+    padding: 7px 7px 7px 7px;
 }
 
 .project1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    border: 5px solid rgb(143, 189, 207);
+    background-image: url(../images/runbuddycapture.PNG);
+    background-position: 0% 0%;
+    flex: 1 80%
 }
 
-.project1 img{
-    width: 100%;
-    height: 100%;
-
+.project2 {
+    background-image: url(../images/plan-your-date-night.png);
+    flex: 1 40%
 }
 
-.run-buddy {
-    display: absolute;
+.project3 {
+    background-image: url(../images/plan-your-date-night.png);
+    flex: 1 40%
 }
+
+.project4 {
+    background-image: url(../images/plan-your-date-night.png);
+    flex: 1 40%
+}
+
+.project5 {
+    background-image: url(../images/plan-your-date-night.png);
+    flex: 1 40%
+}
+
+/* Work Styles End */
 
 /* contact me style start */
 
 .section-content ul {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     list-style: none;
-
-
+    padding-left: 25px;
 }
 
 .section-content ul li {
-    display: flex;
     font-size: 19px;
     font-weight: bolder;
     padding: 15px 20px;
     color: rgb(91, 91, 124);
-    line-height: 1.5;
 }
 
 .section-content a {
     text-decoration: none;
     color: rgb(91, 91, 124);
+}
+
+.contact-content {
+    width: 80%;
+}
+
+@media screen and (max-width: 980px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 575px) {
+    header {
+        position: relative;
+    }
 }
