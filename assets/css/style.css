@@ -12,28 +12,16 @@ body {
 body,
 html {
     height: 100%;
+    width: 100%;
 }
 
 /* header style start */
-
 header {
     padding: 20px;
     background-color: rgb(45, 45, 56);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
-    /* Sticky
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 9999; */
-
-    /* TO Go Back to Norma, delete below and add sticky */
-    /* background-image: url("../images/odaiba-beach.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed; */
 }
 
 header div {
@@ -62,6 +50,7 @@ header a {
 
 header nav {
     margin: 7px 0;
+    position: relative;
 }
 
 header nav ul {
@@ -87,8 +76,7 @@ header nav ul li a:hover {
     border-radius: 15px;
 }
 
-/* hero style start */
-
+/* HERO STYLE START */
 .hero {
     background-image: url(../images/odaiba-beach.jpg);
     background-repeat: no-repeat;
@@ -101,8 +89,6 @@ header nav ul li a:hover {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-
-
 }
 
 .hero div {
@@ -118,9 +104,9 @@ header nav ul li a:hover {
 .hero h2 {
     font-size: 23px;
 }
+/* HERO STYLE END */
 
-/* section style start */
-
+/* SECTIONS / ABOUT MES TYLE START */
 section {
     padding: 25px;
 }
@@ -174,9 +160,9 @@ section {
     color: rgb(91, 91, 124);
     text-align: 1.4;
 }
+/* ABOUT ME STYLE START */
 
-/* Work Section Style Start */
-
+/* WORK STYLE START */
 .flex-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -195,6 +181,7 @@ section {
     background-repeat: no-repeat;
     margin: 0 15px 15px 0;
     position: relative;
+    border: solid 4px rgb(143, 189, 207);
 }
 
 .project-title {
@@ -253,7 +240,6 @@ section {
 /* Work Styles End */
 
 /* contact me style start */
-
 .section-content ul {
     display: flex;
     align-items: center;
@@ -278,12 +264,237 @@ section {
     width: 80%;
 }
 
-@media screen and (max-width: 980px) {}
+@media screen and (max-width: 980px) {
+    header div {
+        box-sizing: content-box;
+        padding: 0 15px 0 15px;
+        justify-content: center;
+        width: 39%;
+    }
 
-@media screen and (max-width: 768px) {}
+    header h1 {
+        right: auto;
+    }
+}
+
+/* MEDIA QUERY START */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 0;
+        background-color: rgb(45, 45, 56);
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    header div {
+        background-color: rgb(143, 189, 207);
+        flex: 1 100%;
+        right: auto;
+        display: flex;
+        justify-content: center;
+        border-radius: 0;
+    }
+
+    header h1 {
+        font-weight: bold;
+        font-size: 38px;
+        color: rgb(45, 45, 56);
+        right: auto;
+        padding: 15px;
+    }
+
+    header nav {
+        margin: 0;
+        width: 100%;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-right: 0;
+    }
+
+    header nav ul li {
+        text-align: center;
+        flex: 1 auto;
+        margin: 10px auto;
+    }
+
+    header nav ul li a {
+        padding: 0;
+        border-bottom: none;
+        margin: 0;
+        font-size: 3.7vw;
+    }
+
+    .about-me-contents {
+        width: 100%;
+    }
+}
 
 @media screen and (max-width: 575px) {
-    header {
+    .flex-wrapper {
+        height: 650px;
+    }
+
+    .hero {
+        height: 35%;
+        justify-content: center;
+    }
+
+    .hero div {
         position: relative;
+        right: auto;
+        opacity: 0.80;
+        border-radius: 5px;
+        margin-bottom: 2.5vw;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    section {
+        padding: 0;
+    }
+
+    .section-container {
+        background-color: rgb(236, 236, 236);
+    }
+
+    .section-flexbox {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #about-me {
+        background-color: rgb(45, 45, 56);
+        width: 100%;
+        margin: 0 auto;
+        padding: 15px 0 0 0;
+    }
+
+    .section-title {
+        flex: 1 100%;
+        border-right: none;
+        justify-content: center;
+    }
+
+    .line-break {
+        display: none;
+    }
+
+    .section-content {
+        flex: 1 100%;
+    }
+
+    .paragraph-container, .portrait {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(143, 189, 207);
+    }
+
+    .about-me-contents {
+        width: 100%;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    #work {
+        padding-bottom: 20px;
+    }
+
+    section {
+        background-color: rgb(45, 45, 56);
+    }
+
+    .flex-wrapper {
+        width: 95%;
+        height: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+
+    .projects {
+        flex: 1 100%;
+        max-width: 85%;
+        margin: 10px 10px 0 10px;
+    }
+
+    .section-title {
+        padding: 8px
+    }
+
+    .project-title {
+        font-size: 3.5vw;
+        margin: 0 0 10% 0;
+        line-height: 1.5;
+        background-color: rgb(143, 189, 207);
+        padding: 7px 7px 7px 7px;
+        width: 60%;
+        text-align: center;
+    }
+
+    #contact-me {
+        background-color: rgb(143, 189, 207);
+    }
+
+    #contact-me br {
+        display: none;
+    }
+
+    .section-content {
+        flex: 1 100%;
+    }
+
+    .section-content ul {
+        display: flex;
+        padding-left: 50px;
+        padding-bottom: 20px;
+    }
+
+    .section-content ul li {
+        flex: 1 100%;
+        font-size: 20px;
+        padding: 0 0 0 20px;
+        line-height: 1.3;
+        color: rgb(91, 91, 124);
+        list-style: disc;
+    }
+
+    .section-content a {
+        text-decoration: none;
+        color: rgb(91, 91, 124);
+    }
+
+    .contact-content {
+        width: 80%;
+    }
+
+    .secondary-color h1 {
+        color: rgb(143, 189, 207);
+        border-bottom: solid 4px rgb(143, 189, 207);
+        width: 60%;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+
+    #contact-me h1 {
+        border-bottom: solid 4px rgb(45, 45, 56);
+        color: rgb(61, 61, 61);
+        width: 60%;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+
+    #contact-me li a {
+        color: rgb(61, 61, 61);
     }
 }
