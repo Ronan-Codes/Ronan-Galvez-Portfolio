@@ -195,27 +195,28 @@ section {
 .project1 {
     background-image: url(../images/runbuddycapture.PNG);
     background-position: 0% 0%;
-    flex: 1 80%
+    flex: 1 80%;
 }
 
 .project2 {
-    background-image: url(../images/plan-your-date-night.png);
-    flex: 1 40%
+    background-image: url(../images/Horiseon-img.PNG);
+    flex: 1 40%;
+    background-position: 0% 0%;
 }
 
 .project3 {
-    background-image: url(../images/plan-your-date-night.png);
-    flex: 1 40%
+    background-image: url(../images/placeholder-1.jpg);
+    flex: 1 40%;
 }
 
 .project4 {
-    background-image: url(../images/plan-your-date-night.png);
-    flex: 1 40%
+    background-image: url(../images/placeholder-2.jpg);
+    flex: 1 40%;
 }
 
 .project5 {
-    background-image: url(../images/plan-your-date-night.png);
-    flex: 1 40%
+    background-image: url(../images/odaiba.jpg);
+    flex: 1 40%;
 }
 
 .project-title::after {
@@ -228,13 +229,13 @@ section {
     display: block;
     position: absolute;
     background-color: rgba(88, 145, 167, 0.15);
-    filter: brightness(96%);
-    transition: .6s;
+    filter: brightness(88%);
+    transition: .4s;
 }
 
 .project-title:hover::after {
     background-color: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 8px rgba(0, 0, 0, .6);
+    box-shadow: 0 0 15px rgba(0, 0, 0, .6);
     filter: brightness(100%);
 }
 /* Work Styles End */
@@ -497,4 +498,5 @@ section {
     #contact-me li a {
         color: rgb(61, 61, 61);
     }
+    
 }
